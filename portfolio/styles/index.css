@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden;
+ }
+
+@font-face {
+    font-family: SmallTypeWriting;
+    src: url(/media/fonts/SmallTypeWriting.ttf);
+    font-family: Gobold;
+    src: url(/media/fonts/Gobold\ Blocky\ Italic\ WebFont.woff);
+  }
+
+  
+@media (min-aspect-ratio: 16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1023px) {
+    *{
+        overflow-x: hidden;
+    }
+
+    nav{
+         padding: 20px 0px;
+    }
+}
